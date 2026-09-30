@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #09090b;
+    color: #f4f4f5;
+  }
+  
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Playfair Display', Georgia, serif;
+    letter-spacing: -0.01em;
+  }
+
+  .font-mono-code {
+    font-family: 'Space Grotesk', monospace;
+  }
+}
+
+/* iOS Luxury Dark Glassmorphism */
+.glass-panel {
+  background: rgba(24, 24, 27, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-active {
+  background: rgba(28, 25, 23, 0.85);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(249, 115, 22, 0.35);
+  box-shadow: 0 0 35px -5px rgba(249, 115, 22, 0.15);
+}
+
+.amber-glow {
+  box-shadow: 0 0 25px -4px rgba(249, 115, 22, 0.28), 0 0 10px -2px rgba(217, 119, 6, 0.2);
+}
+
+.amber-glow-subtle {
+  box-shadow: 0 0 15px -3px rgba(249, 115, 22, 0.15);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
